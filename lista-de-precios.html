@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
+    <title>inicio</title>
+</head>
+
+<body>
+    <div class="main">
+<!---------------------------------header-------------------------------------------------->
+    
+        <header>
+
+            <div class="menu-nav">
+                <i id="navicon" class="fas fa-bars fa-lg"></i>     
+            </div>
+
+            <div class="logo">
+                <img id="logoSup" src="images/logo.png" alt="imagen del logo">      
+            </div>                 
+
+        </header>
+    <!----------------------------------- Fin header ---------------------------------------->
+    
+        <nav id="navBar">       
+          
+            <ul>
+                <li><a href="index.html">inicio </a></li>
+                <li><a href="productos.html">productos</a></li>                          
+                <li><a href="nuestra-tienda.html">nuestra tienda </a></li>
+                <li><a href="lista-de-precios.html">lista de precios</a></li>
+                <li><a href="contacto.html">contacto</a></li> 
+            </ul>
+        </nav>
+        <div class="contenido">
+            <table class="listaPrecios">
+                <thead>
+                    <tr>
+                        <th>producto</th>
+                        <th>x250grs</th>
+                        <th>x500grs</th>
+                        <th>x1kg</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaPrecios" >
+               
+                </tbody>
+            </table>
+
+            <form id="formCargaProd">
+                <label for ="nombre">
+                    <h5> Producto</h5>
+                    <input  type="text" name="producto" id="producto" value="" placeholder="nombre del producto" required>
+                </label>
+
+                <label for="precio250">
+                    <h5>Precio x 250Grs</h5>
+                    <input type= "number" name="precio250" id="precio250" value="" placeholder="Precio por 250 grs." required>
+                </label>
+
+                <label for="precio500">
+                    <h5> Precio x 500 grs</h5>
+                    <input type="number" name="precio500" id="precio500" value="" placeholder="Precio por 500 grs." required>
+                </label>
+
+                <label for="precio1kg"> 
+                    <h5> precio x 1 kg</h5>
+                    <input type="number" name="precio1kg" id="precio1kg" value="" placeholder="Precio por 1 Kg." required>
+                </label>
+
+                Tildar si se debe realizar descuento 15% en contado efectivo
+                <input type="checkbox" name="desc15" id="desc15">
+                <button type="button" class="cargarProd" value='1'>Cargar 1 producto</button>  
+                <button type="button" class="cargarProd" value = '3'> cargar 3 productos</button>
+                <button type="button" id="borrarTabla" value = '0'> borrar tabla</button>
+            
+            </form>
+    </div>
+    
+   
+    <!----------------------------------------footer----------------------------------------------------->
+    
+        <footer>         
+  
+            <div class="footerLinks">
+
+                <h4>Nuestras redes sociales</h4>
+
+                <div class="social">                    
+
+                    <a href="#"><i class="fab fa-facebook-f "></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                 </div>             
+            </div>  
+
+            <h6 class="rights">
+                Este Sitio fue creado por <span>-Bee-Feed-</span> | Copyright © Derechos reservados por el autor.
+            </h6>
+
+        </footer>
+    </div>
+  <script src="js/main.js"></script>
+  <script src ="js/tablaDinamica.js"></script>
+</body>
+</html>
